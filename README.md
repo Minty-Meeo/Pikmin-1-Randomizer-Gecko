@@ -26,7 +26,7 @@ IMPORTANT NOTE: GCN versions of Pikmin 1 will run out of memory on real hardware
 
 This guide assumes you have a homebrewed Wii with [Cheat Manager](https://wiibrew.org/wiki/CheatManager) and [Gecko OS](https://wiibrew.org/wiki/Gecko_OS) installed. 
 
-If one does not exist already, create a "txtcodes" folder on the root of your Wii's SD card.  Copy the \*.txt files from [release.zip](https://github.com/Minty-Meeo/Pikmin-1-Randomizer/releases/download/v1/release.zip) into txtcodes on your SD card.
+If one does not exist already, create a "txtcodes" folder on the root of your Wii's SD card.  Copy the \*.txt files from [release.zip](https://github.com/Minty-Meeo/Pikmin-1-Randomizer/releases/download/v1/release.zip) into the "txtcodes" folder on your SD card.
 
 On your Wii, open Cheat Manager and enable the desired patches, then generate a \*.gct file.
 
