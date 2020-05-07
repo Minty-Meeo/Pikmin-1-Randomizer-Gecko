@@ -189,7 +189,7 @@ BOSS:
 		b BOSS      ;1D yamash5
 		b BOSS      ;1E namazu
 		b BOSS      ;1F chappb
-		b BOSS_OK   ;20 swallob
+		b BOSS      ;20 swallob
 		b BOSS      ;21 frow
 		b BOSS      ;22 nakata1
 	BOSS_OK:
