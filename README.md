@@ -30,8 +30,8 @@ If one does not exist already, create a "txtcodes" folder on the root of your Wi
 
 On your Wii, open Cheat Manager and enable the desired patches, then generate a \*.gct file.
 
-![Cheat Manager Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Cheat-Manager-tuto.gif?token=AK2SFVNFADAEP4HSNNBG6TK6WSHHG)
+![Cheat Manager Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Cheat-Manager-tuto.gif)
 
 Following that, open Gecko OS and, with SD Cheats enabled, launch the game.
 
-![Gecko OS Tutorial](https://github.com/Minty-Meeo/Pikmin-1-Randomizer/blob/master/docs/Gecko-OS-tuto.gif?raw=true)
+![Gecko OS Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Gecko-OS-tuto.gif)
