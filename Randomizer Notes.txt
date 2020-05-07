@@ -1,0 +1,126 @@
+--------------------------------------------------
+GEN Object "teki"
+--------------------------------------------------
+INPUT
+	BASIC
+		Yellow Wollywog
+		Iwagen
+		Spotty Bulborb
+		Breadbug
+		Fiery Blowhog
+		Puffy Blowhog
+		Spotty Bulbear
+		White Wollywog
+	UNUSUAL
+		Usuba
+		Yamash3
+		Yamash4
+		Yamash5
+		Nakata1
+	BOSS
+		Puffstool
+		Pearly Clamclamp
+		Pearl (not usually spawned alone)
+		Rocpe (not usually spawned alone)
+		Armored Cannon Beetle
+		Tamago (giant egg)
+		Smoky Progg (not usually spawned alone)
+		Mamuta
+	LIMIT
+		Iwagon (rolling boulder)
+		Dwarf Bulborb
+		Mizigen (honeywisp spawner)
+		Honeywisp (not usually spawned alone)
+		Pellet Posy
+		Female Sheargrub
+		Male Sheargrub
+		Shearwig
+		Fire Geyser
+		Wogpole
+		Water Dumple
+		Dwarf Bulbear
+
+OUTPUT
+	BASIC / UNUSUAL
+		Yellow Wollywog
+		Spotty Bulborb
+		Fiery Blowhog
+		White Wollywog
+		UP TO 2 "UPGRADE" TEKIS
+	UPGRADE
+		Breadbug
+		Puffstool
+		Snitchbug
+		Puffy Blowhog
+		Armored Cannon Beetle
+		Tamago (giant egg)
+		Mamuta
+		Spotty Bulbear
+	BOSS
+		Puffstool
+		Puffy Blowhog
+		Armored Cannon Beetle
+		Smoky Progg
+		Mamuta
+		Spotty Bulbear
+	LIMIT
+		Dwarf Bulborb
+		Mizigen (honeywisp spawner)
+		Pellet Posy
+		Female Sheargrub
+		Male Sheargrub
+		Shearwig
+		Fire Geyser
+		Wogpole
+		Water Dumple
+		Dwarf Bulbear
+
+NOTE: All "UPGRADE" tekis will spawn 2 drops of nectar upon defeat, except for Tamago,
+which drops 8.  Tamago no longer births a Smoky Progg, and thus is now a rare, beneficial
+enemy spawn rather than an annoyance.  Have fun with this new mechanic!
+
+NOTE: Drop tables
+	
+
+--------------------------------------------------
+GEN Object "boss"
+--------------------------------------------------
+INPUT
+	BASIC
+		Beady Long Legs
+		Burrowing Snagret (sphere)
+		Goolix
+		Emperor Bulblax
+		Burrowing Snagret (prism)
+	WEIRD
+		Iridescent Flint Beetle
+		Candypop Bud
+		Kingback
+	GEYSER
+		Water Geyser (off)
+		Water Geyser (on)
+
+OUTPUT
+	BASIC
+		Beady Long Legs
+		Burrowing Snagret (sphere)
+		Goolix
+		Emperor Bulblax
+	WEIRD
+		Iridescent Flint Beetle
+		Candypop Bud
+	GEYSER
+		Water Geyser (off)
+		Water Geyser (on)
+
+NOTE: "BASIC" bosses will never randomly remain unchanged, because there's only so many
+"BASIC" bosses in vanilla Pikmin 1.  In playtesting, I found the 1/4 chance that a boss
+would go unchanged to be uninteresting.  I never even saw Goolix once, and fought Emperor
+Bulblax three times.
+
+NOTE: All three colors of Candypop Bud will spawn regardless of which Pikmin colors are
+unlocked.  The necessary precautions have been hacked in to avoid game-crashing and
+otherwise glitchy side-effects of this change.  Have fun with this new mechanic!
+
+
+

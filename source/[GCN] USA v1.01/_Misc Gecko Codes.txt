@@ -1,0 +1,76 @@
+r2  | 803f0200
+r13 | 803e4d20
+
+
+// New sdata (r13)
+At the top of the stack, as nothing should reach that.
+803ec844	[upgrade_count]
+
+
+
+
+
+
+// Resize "teki" subheap
+In function [__ct__18NewPikiGameSectionFv]
+04059a88	3f200028	lis	r25, 0x0028
+			3f200050	lis	r25, 0x0050
+
+// Candypop Buds Always Unlocked
+In function [create__7BossMgrFiR9BirthInfoP13GenObjectBoss]
+04151cd0	418204a4	beq-	 ->0x80152174
+			60000000	nop
+
+// Candypop Buds Close Faster
+In sdata1 [@1002 	plugPikiNishimura.a Pom.cpp]
+043e52d8	"p00\0"
+			"\0\0\0\0"
+
+// Plucking first piki doesn't unlock anything
+In function [setDisplayPikiCount__11PlayerStateFi]  // Unlocking Onions (no longer wild)
+040805fc	980301ac	stb	r0, 0x01AC (r3)
+			60000000	nop
+In function [cleanup__15PikiNukareStateFP4Piki]     // Yellow Piki "SetDisplayPikiCount"
+040d73b8	98030184	stb	r0, 0x0184 (r3)
+			60000000	nop
+In function [cleanup__15PikiNukareStateFP4Piki]     // Blue Piki "SetDisplayPikiCount"
+040d7420	98030184	stb	r0, 0x0184 (r3)
+			60000000	nop
+
+// Tail of No Onion Routing Crash Fix
+In function [doLift__12ActTransportFv]
+040b0858 60000000
+040b085C 60000000
+040b0860 60000000
+
+// Tekis always spawn pellets
+In function [spawnItems__5BTekiFv]
+04145f20	40800044	bge-	 ->0x80145F64
+			60000000	nop
+// Tekis always spawn water
+In function [spawnItems__5BTekiFv]
+04145fac	40800034	bge-	 ->0x80145FE0
+			60000000	nop
+
+//--------------------------------------------------
+// Tamago is a party ball
+// This uses [spawnItems__5BTekiFv]
+//--------------------------------------------------
+// Hatching produces items
+In function [act__9TAIAhatchFR4Teki]
+041d0cbc	4e800021	blrl	
+			4BF751AD	bl	-->[spawnItems__5BTekiFv]
+// Dying produces items
+In function [act__15TAIAdyingTamagoFR4Teki]
+041d0f34	806d3180	lwz	r3, 0x3180 (r13)
+			7FC3F378	mr	r3, r30
+041d0f38	4bfcbc01	bl	-->[create__9EffectMgrFQ29EffectMgr12effTypeTableR8Vector3fPQ23zen37CallBack1<PQ23zen17particleGenerator>PQ23zen58CallBack2<PQ23zen17particleGenerator,PQ23zen11particleMdl>]
+			4BF74F31	bl	-->[spawnItems__5BTekiFv]
+// Fix particles for dying
+In function [act__15TAIAdyingTamagoFR4Teki]
+041d0f44	388000a8	li	r4, 168
+			388000aa	li	r4, 170
+041d0f5c	388000a7	li	r4, 167
+			388000a9	li	r4, 169
+
+

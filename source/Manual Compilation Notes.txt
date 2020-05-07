@@ -1,0 +1,25 @@
+==================================================
+Order of codes in GCT / TXT
+==================================================
+Resize "teki" subheap
+
+Randomize Tekis
+Randomize Bosses
+Randomize Plants
+
+Tekis always spawn pellets
+Tekis always spawn water
+Randomize Spawn Number Pellet (1 of 2)
+Randomize Spawn Number Pellet (2 of 2)
+Randomize Boss Number Pellets
+
+Candypop Buds Always Unlocked
+Plucking first piki doesn't unlock anything
+Approaching Onions Unlocks Everything
+Fix No Onion Routing Crash
+Tail of No Onion Routing Crash Fix
+Candypop Buds Close Faster
+
+Reset static int upgrade_count
+Tamago is a party ball
+Fix Smoky Progg Routing Crash

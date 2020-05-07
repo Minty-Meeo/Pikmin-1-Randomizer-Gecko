@@ -1,0 +1,150 @@
+Tekis that hold UFO Parts
+	beatle	Bowspirit
+	kinoko	Omega Stabilizer
+	collec	Space Float
+	rocpe	Positron Generator
+	mar		Interstellar Radio
+Bosses that hold UFO Parts
+	kumo	Guard Satellite
+	snake	Geiger Counter
+	king	Secret Safe
+
+
+
+
+INPUT
+	BASIC
+	 - Yellow Wollywog
+	 - Iwagen
+	 - Dwarf Bulborb
+	 - Spotty Bulborb
+	 - Honeywisp Generator
+	 - Pellet Posy
+	 - Breadbug Nest
+	 - Fiery Blowhog
+	 - Female Sheargrub
+	 - Male Sheargrub
+	 - Shearwig
+	 - Wogpole
+	 - Water Dumple
+	 - Dwarf Bulbear
+	 - Spotty Bulbear
+	 - White Wollywog
+	UNUSUAL
+	 - Rolling Boulder
+	 - Honeywisp (alone)
+	 - Pearl
+	 - Rocket Pearl
+	 - Usuba
+	 - Yamashita 3
+	 - Yamashita 4
+	 - Yamashita 5
+	 - Nakata 1
+	BOSS
+	 - Puffstool
+	 - Pearly Clamclamp
+	 - Puffy Blowhog
+	 - Armored Cannon Beetle
+	 - Giant Egg
+	 - Smoky Progg
+	 - Mamuta
+	LIMIT
+	 - Fire Geyser
+	ROUTER
+	 - Breadbug
+	 - Snitchbug
+OUTPUT
+	BASIC / UNUSUAL
+	 - Yellow Wollywog
+	 - Dwarf Bulborb
+	 - Spotty Bulborb
+	 - Honeywisp Generator
+	 - Pellet Posy
+	 - Fiery Blowhog
+	 - Female Sheargrub
+	 - Male Sheargrub
+	 - Shearwig
+	 - Fire Geyser
+	 - Wogpole
+	 - Water Dumple
+	 - Dwarf Bulbear
+	 - Spotty Bulbear
+	 - White Wollywog
+	BOSS
+	 - Puffstool
+	 - Pearly Clamclamp
+	 - Puffy Blowhog
+	 - Armored Cannon Beetle
+	 - Smoky Progg
+	 - Mamuta
+	LIMIT
+	 - Yellow Wollywog
+	 - Dwarf Bulborb
+	 - Honeywisp Generator
+	 - Pellet Posy
+	 - Fiery Blowhog
+	 - Female Sheargrub
+	 - Male Sheargrub
+	 - Shearwig
+	 - Fire Geyser
+	 - Wogpole
+	 - Water Dumple
+	 - Dwarf Bulbear
+	 - White Wollywog
+	ROUTER
+	 - Breadbug
+	 - Snitchbug
+Route-Pathing Tekis
+	Breadbug
+	Snitchbug
+	Smoky Progg
+
+Large Enemies
+	Armored Cannon Beetle
+	Puffstool
+	Smoky Progg
+	Tamago
+	Pearly Clamclamp
+	Puffy Blowhog
+
+Do not spawn hollec anymore.  Apply a hack to spawn in a hollec with every collec.
+Tekis with treasures must reference a reduced list of outputs.  Otherwise, go wild.
+Large tekis
+
+
+
+0x00 	Yellow Wollywog                 frog
+0x01 	Iwagen                          iwagen
+0x02 	Rolling Boulder                 iwagon
+0x03 	Dwarf Bulborb                   chappy
+0x04 	Spotty Bulborb                  swallow
+0x05 	Honeywisp Spawner               mizigen
+0x06 	Honeywisp                       qurione
+0x07 	Pellet Posy                     palm
+0x08 	Breadbug                        collec
+0x09 	Puffstool                       kinoko
+0x0A 	Pearly Clamclamp (shell)        shell
+0x0B 	Swooping Snitchbug              napkid
+0x0C 	Breadbug Nest                   hollec
+0x0D 	Pearly Clamclamp (pearl)        pearl
+0x0E 	Pearly Clamclamp (ufo part)     rocpe
+0x0F 	Fiery Blowhog                   tank
+0x10 	Puffy Blowhog                   mar
+0x11 	Armored Cannon Beetle           beatle
+0x12 	Female Sheargrub                kabekuiA
+0x13 	Male Sheargrub                  kabekuiB
+0x14 	Shearwig                        kabekuiC
+0x15 	Giant Egg                       tamago
+0x16 	Smokey Progg                    dororo
+0x17 	Fire Geyser                     hibaA
+0x18 	Mamuta                          miurin
+0x19 	Wogpole                         otama
+0x1A 	(crashes)                       usuba
+0x1B 	(crashes)                       yamash3
+0x1C 	(crashes)                       yamash4
+0x1D 	(crashes)                       yamash5
+0x1E 	Water Dumple                    namazu
+0x1F 	Dwarf Bulbear                   chappb
+0x20 	Spotty Bulbear                  swallob
+0x21 	White Wollywog                  frow
+0x22 	(crashes)                       nakata1 
