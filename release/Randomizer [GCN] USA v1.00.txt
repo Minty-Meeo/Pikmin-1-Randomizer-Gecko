@@ -1,5 +1,5 @@
 GPIE01
-Pikmin 1 (USA v1.01)
+Pikmin 1 (USA v1.00)
 
 Randomizer [Minty Meeo]
 C20EBD8C 00000004
