@@ -1,10 +1,10 @@
 # Pikmin-1-Randomizer
-A Randomizer for Pikmin 1 (GCN/Wii) powered entirely by Gecko Codes
+A Randomizer for Pikmin 1 (GCN/Wii) powered entirely by [Gecko Codes](https://geckocodes.org/)
 
 ## How to download / What am I downloading
 Go to this repository's [release](https://github.com/Minty-Meeo/Pikmin-1-Randomizer/releases) tab.  Download [release.zip](https://github.com/Minty-Meeo/Pikmin-1-Randomizer/releases/download/v1/release.zip).
 
-This package contains \*.txt files with Gecko Codes formatted to be parsed by the Wii Homebrew app [Cheat Manager](https://wiibrew.org/wiki/CheatManager).  Since it's all plaintext, though, you can easily open these files to copy the Gecko Codes into Dolphin's Cheat Code Editor.
+This package contains \*.txt files with Gecko Codes formatted to be parsed by the Wii Homebrew app [Cheat Manager](https://wiibrew.org/wiki/CheatManager).  Since it's all plaintext, one can easily open these files to copy the Gecko Codes into Dolphin's Cheat Code Editor.
 
 In addition to the randomizer code, a patch that re-enables the unused pluckaphone feature is included as well.  This is because Candypop Buds will often spawn in undesirable places, leading to Pikmin being unpluckable by normal means.  Use this patch at your discretion.
 
@@ -35,3 +35,12 @@ On your Wii, open Cheat Manager and enable the desired patches, then generate a 
 Following that, open Gecko OS and, with SD Cheats enabled, launch the game.
 
 ![Gecko OS Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Gecko-OS-tuto.gif)
+
+## The technical mumbo jumbo
+Pikmin 1 Randomizer is written entirely using [Gecko Codes](https://geckocodes.org/) using [CodeWrite](https://github.com/TheGag96/CodeWrite).
+
+See the file "Randomizer Notes.txt" for information on the logic of the randomizer.
+
+You may notice a port to GCN USA v1.00 in my repository.  This was a warm-up port of the Randomizer from before I ported it to New Play Control! USA.  It has fallen a bit behind code-wise from the final product, so it should only be used if absolutely necessary.
+
+I have no plans to port the Randomizer to any other revisions of Pikmin 1 at the moment, but the source and documentation is available to anyone who wants to try.
