@@ -13,7 +13,7 @@ In the \*.txt files from [release.zip](https://github.com/Minty-Meeo/Pikmin-1-Ra
 
 ![Gecko Codes Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Gecko-Codes-tuto.gif)
 
-Make sure the revision of your copy of Pikmin 1 matches the code you are using.  You can find this in the Game Properties window.
+Make sure the revision of your copy of Pikmin 1 matches the code you are using.  You can find this in the Game Properties window.  Revision 1 is v1.01, Revision 2 is v1.02, etc.
 
 ![Game Info Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Info%20tuto.png)
 
