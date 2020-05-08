@@ -79,8 +79,8 @@ NOTE: All "UPGRADE" tekis will spawn 2 drops of nectar upon defeat, except for T
 which drops 8.  Tamago no longer births a Smoky Progg, and thus is now a rare, beneficial
 enemy spawn rather than an annoyance.  Have fun with this new mechanic!
 
-NOTE: Drop tables
-	
+NOTE: All tekis will spawn 0 to 3 number pellets of sizes 1 or 5 upon defeat, except for
+Pellet Posies, which drop 1 to 3.
 
 --------------------------------------------------
 GEN Object "boss"
@@ -121,6 +121,8 @@ Bulblax three times.
 NOTE: All three colors of Candypop Bud will spawn regardless of which Pikmin colors are
 unlocked.  The necessary precautions have been hacked in to avoid game-crashing and
 otherwise glitchy side-effects of this change.  Have fun with this new mechanic!
+
+NOTE: All bosses are supposed to drop 1, 5, or 10 pellets.
 
 
 
