@@ -1,4 +1,4 @@
-# Pikmin-1-Randomizer
+![Banner](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Banner.png)
 A Randomizer for Pikmin 1 (GCN/Wii) powered entirely by [Gecko Codes](https://geckocodes.org/)
 
 ## How to download / What am I downloading
