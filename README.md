@@ -44,3 +44,6 @@ See the file "Randomizer Notes.txt" for information on the logic of the randomiz
 You may notice a port to GCN USA v1.00 in my repository.  This was a warm-up port of the Randomizer from before I ported it to New Play Control! USA.  It has fallen a bit behind code-wise from the final product, so it should only be used if absolutely necessary.
 
 I have no plans to port the Randomizer to any other revisions of Pikmin 1 at the moment, but the source and documentation is available to anyone who wants to try.
+
+## Can I report a bug?
+If you're playing in Dolphin Emulator and experience a crash or some other oddity, the best thing you can do is make a savestate and share it with me.  The GameCube revisions of Pikmin 1 also have a crash handler that prints to OSReports, which in turn are captured by Dolphin Emulator and displayed in its log.  If you could send me that log as well, that'd be super.  You can send these things either via an Issue Report on this Github page, or on Discord via Hocotate Hacker (my tag is @The JustGreat Minty Meeo#0244).
