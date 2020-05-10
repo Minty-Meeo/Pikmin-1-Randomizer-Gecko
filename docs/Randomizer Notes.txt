@@ -46,6 +46,7 @@ OUTPUT
 		Spotty Bulborb
 		Fiery Blowhog
 		White Wollywog
+		Spotty Bulbear
 		UP TO 2 "UPGRADE" TEKIS
 	UPGRADE
 		Breadbug
@@ -55,7 +56,6 @@ OUTPUT
 		Armored Cannon Beetle
 		Tamago (giant egg)
 		Mamuta
-		Spotty Bulbear
 	BOSS
 		Puffstool
 		Puffy Blowhog
