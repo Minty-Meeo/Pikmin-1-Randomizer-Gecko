@@ -9,6 +9,9 @@ This package contains \*.txt files with Gecko Codes formatted to be parsed by th
 In addition to the randomizer code, a patch that re-enables the unused pluckaphone feature is included as well.  This is because Candypop Buds will often spawn in undesirable places, leading to Pikmin being unpluckable by normal means.  Use this patch at your discretion.
 
 ## Playing in Dolphin Emulator
+### FIRST AND FOREMOST!
+5.0-11969 was when my Extendo-RAM feature was added to Dolphin Emulator.  Make sure you have a build equal to or greater than this, otherwise the Configurable MEM1 will not be available.
+
 In the \*.txt files from [release.zip](https://github.com/Minty-Meeo/Pikmin-1-Randomizer/releases/download/v1/release.zip), copy the relevant lines of text into the Gecko Code editor in Dolphin Emulator's Game Properties window.  You can also do this for the "Always Pluckaphone" code if desired.
 
 ![Gecko Codes Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Gecko-Codes-tuto.gif)
@@ -17,7 +20,7 @@ Make sure the revision of your copy of Pikmin 1 matches the code you are using. 
 
 ![Game Info Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Info%20tuto.png)
 
-If playing the GCN USA v1.01 version of Pikmin 1, also boost the MEM1 size in Dolphin's Config window.  32MB should be enough.
+If playing a GameCube version of Pikmin 1, also boost the MEM1 size in Dolphin's Config window.  32MB should be enough.
 
 ![Extendo-RAM Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Extendo-RAM-tuto.gif)
 
