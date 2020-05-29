@@ -1,0 +1,71 @@
+52:06:419 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: Non-recoverable Exception 7
+52:06:422 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ------------------------- Context 0x803d2a48 -------------------------
+52:06:424 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r0   = 0x09a7ec80 (     162000000)  r16  = 0x00000000 (             0)
+52:06:425 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r1   = 0x803fc7d8 (   -2143303720)  r17  = 0x00000000 (             0)
+52:06:427 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r2   = 0x803f0200 (   -2143354368)  r18  = 0x00000000 (             0)
+52:06:429 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r3   = 0x1a36377c (     439760764)  r19  = 0x00000000 (             0)
+52:06:431 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r4   = 0x80149dd8 (   -2146132520)  r20  = 0x00000000 (             0)
+52:06:432 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r5   = 0x43300000 (    1127219200)  r21  = 0x00000000 (             0)
+52:06:433 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r6   = 0x00149dd8 (       1351128)  r22  = 0x00000000 (             0)
+52:06:434 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r7   = 0xcc006404 (    -872389628)  r23  = 0x00000000 (             0)
+52:06:435 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r8   = 0x802045f4 (   -2145368588)  r24  = 0x00000000 (             0)
+52:06:437 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r9   = 0x802e0000 (   -2144468992)  r25  = 0x00000000 (             0)
+52:06:438 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r10  = 0x00000000 (             0)  r26  = 0x00000000 (             0)
+52:06:440 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r11  = 0x00000020 (            32)  r27  = 0x00000000 (             0)
+52:06:441 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r12  = 0x00000000 (             0)  r28  = 0x00000000 (             0)
+52:06:442 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r13  = 0x803e4d20 (   -2143400672)  r29  = 0x00000000 (             0)
+52:06:443 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r14  = 0x00000000 (             0)  r30  = 0x8039888c (   -2143713140)
+52:06:445 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: r15  = 0x00000000 (             0)  r31  = 0x8039888c (   -2143713140)
+52:06:446 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: LR   = 0x80044c84                   CR   = 0x20000088
+52:06:447 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: SRR0 = 0x80044cb0                   SRR1 = 0x00000030
+52:06:447 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 
+52:06:448 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: GQRs----------
+52:06:449 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: gqr0 = 0x00000000 	 gqr4 = 0x00000000
+52:06:449 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: gqr1 = 0x00000000 	 gqr5 = 0x00000000
+52:06:450 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: gqr2 = 0x00000000 	 gqr6 = 0x00000000
+52:06:451 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: gqr3 = 0x00000000 	 gqr7 = 0x00000000
+52:06:452 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 
+52:06:452 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 
+52:06:452 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: FPRs----------
+52:06:453 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr0 	= 1 	 fr1 	= 0
+52:06:454 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr2 	= 1 	 fr3 	= -1
+52:06:454 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr4 	= -2147483648 	 fr5 	= 0
+52:06:455 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr6 	= 1 	 fr7 	= 240
+52:06:455 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr8 	= 320 	 fr9 	= 340
+52:06:455 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr10 	= 0 	 fr11 	= 0
+52:06:456 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr12 	= 0 	 fr13 	= 0
+52:06:456 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr14 	= 0 	 fr15 	= 0
+52:06:457 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr16 	= 0 	 fr17 	= 0
+52:06:457 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr18 	= 0 	 fr19 	= 0
+52:06:458 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr20 	= 0 	 fr21 	= 0
+52:06:458 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr22 	= 0 	 fr23 	= 0
+52:06:459 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr24 	= 0 	 fr25 	= 0
+52:06:459 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr26 	= 0 	 fr27 	= 0
+52:06:459 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr28 	= 0 	 fr29 	= 0
+52:06:460 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: fr30 	= 0 	 fr31 	= 0
+52:06:460 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 
+52:06:460 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 
+52:06:460 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: PSFs----------
+52:06:461 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps0 	= 0x0 	 ps1 	= 0x0
+52:06:462 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps2 	= 0x0 	 ps3 	= 0xffffffff
+52:06:463 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps4 	= 0xffffffff 	 ps5 	= 0x0
+52:06:463 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps6 	= 0x0 	 ps7 	= 0xffffffff
+52:06:464 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps8 	= 0xffffffff 	 ps9 	= 0xffffffff
+52:06:465 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps10 	= 0x0 	 ps11 	= 0x0
+52:06:465 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps12 	= 0x0 	 ps13 	= 0x0
+52:06:466 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps14 	= 0x0 	 ps15 	= 0x0
+52:06:466 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps16 	= 0x0 	 ps17 	= 0x0
+52:06:467 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps18 	= 0x0 	 ps19 	= 0x0
+52:06:467 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps20 	= 0x0 	 ps21 	= 0x0
+52:06:468 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps22 	= 0x0 	 ps23 	= 0x0
+52:06:468 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps24 	= 0x0 	 ps25 	= 0x0
+52:06:469 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps26 	= 0x0 	 ps27 	= 0x0
+52:06:469 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps28 	= 0x0 	 ps29 	= 0x0
+52:06:470 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: ps30 	= 0x0 	 ps31 	= 0x0
+52:06:470 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 
+52:06:471 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: Address:      Back Chain    LR Save
+52:06:472 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 0x803fc7d8:   0x803fc800    0x80044c84
+52:06:473 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 0x803fc800:   0x803fc820    0x80044bf8
+52:06:474 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 0x803fc820:   0x803fc838    0x800055b8
+52:06:475 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: 
+52:06:476 Core\HW\EXI\EXI_DeviceIPL.cpp:306 N[OSREPORT]: DSISR= 0x00000000                   DAR  = 0x00000000

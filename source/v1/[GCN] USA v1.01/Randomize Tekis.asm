@@ -32,22 +32,22 @@ SWITCHCASE__old_id_value:
 	b LIMIT      ;06 qurione   Lone Honeywisp (invalid)
 	b LIMIT      ;07 palm      Pellet Posy
 	b BASIC      ;08 collec    Breadbug
-	b BOSS       ;09 kinoko    Puffstool
-	b BOSS       ;0A shell     Pearly Clamclamp
+	b SUBBOSS    ;09 kinoko    Puffstool
+	b SUBBOSS    ;0A shell     Pearly Clamclamp
 	b BASIC      ;0B napkid    Snitchbug
 	b BASIC      ;0C hollec    Breadbug Nest
-	b BOSS       ;0D pearl     Lone Pearl (invalid)
-	b BOSS       ;0E rocpe     Lone Rocket Pearl (invalid)
+	b SUBBOSS    ;0D pearl     Lone Pearl (invalid)
+	b SUBBOSS    ;0E rocpe     Lone Rocket Pearl (invalid)
 	b BASIC      ;0F tank      Fiery Blowhog
 	b BASIC      ;10 mar       Puffy Blowhog
-	b BOSS       ;11 beatle    Armored Cannon Beetle
+	b SUBBOSS    ;11 beatle    Armored Cannon Beetle
 	b LIMIT      ;12 kabekuiA  Female Sheargrub
 	b LIMIT      ;13 kabekuiB  Male Sheargrub
 	b LIMIT      ;14 kabekuiC  Shearwig
-	b BOSS       ;15 tamago    Giant Egg
-	b BOSS       ;16 dororo    Smoky Progg
+	b SUBBOSS    ;15 tamago    Giant Egg
+	b SUBBOSS    ;16 dororo    Smoky Progg
 	b LIMIT      ;17 hibaA     Fire Geyser
-	b BOSS       ;18 miurin    Mamuta
+	b SUBBOSS    ;18 miurin    Mamuta
 	b LIMIT      ;19 otama     Wogpole
 	b UNUSUAL    ;1A usuba     Usuba (invalid)
 	b UNUSUAL    ;1B yamash3   (invalid)
@@ -139,7 +139,7 @@ BASIC:
 		stw	r31, 0x0010 (r4)      ; Write to GEN Object
 	BASIC_OK:
 	b WRITE_TO_GEN_OBJECT
-BOSS:
+SUBBOSS:
 	lis	r3, 0x8021		;[rand]@h
 	ori	r3, r3, 0x8070		;[rand]@l
 	mtlr	r3
@@ -157,42 +157,42 @@ BOSS:
 		mtctr r0
 		bctr
 		
-		b BOSS      ;00 frog
-		b BOSS      ;01 iwagen
-		b BOSS      ;02 iwagon
-		b BOSS      ;03 chappy
-		b BOSS      ;04 swallow
-		b BOSS      ;05 mizigen
-		b BOSS      ;06 qurione
-		b BOSS      ;07 palm
-		b BOSS      ;08 collec
-		b BOSS_OK   ;09 kinoko
-		b BOSS      ;0A shell
-		b BOSS      ;0B napkid
-		b BOSS      ;0C hollec
-		b BOSS      ;0D pearl
-		b BOSS      ;0E rocpe
-		b BOSS      ;0F tank
-		b BOSS_OK   ;10 mar
-		b BOSS_OK   ;11 beatle
-		b BOSS      ;12 kabekuiA
-		b BOSS      ;13 kabekuiB
-		b BOSS      ;14 kabekuiC
-		b BOSS      ;15 tamago
-		b BOSS_OK   ;16 dororo
-		b BOSS      ;17 hibaA
-		b BOSS_OK   ;18 miurin
-		b BOSS      ;19 otama
-		b BOSS      ;1A usuba
-		b BOSS      ;1B yamash3
-		b BOSS      ;1C yamash4
-		b BOSS      ;1D yamash5
-		b BOSS      ;1E namazu
-		b BOSS      ;1F chappb
-		b BOSS      ;20 swallob
-		b BOSS      ;21 frow
-		b BOSS      ;22 nakata1
-	BOSS_OK:
+		b SUBBOSS      ;00 frog
+		b SUBBOSS      ;01 iwagen
+		b SUBBOSS      ;02 iwagon
+		b SUBBOSS      ;03 chappy
+		b SUBBOSS      ;04 swallow
+		b SUBBOSS      ;05 mizigen
+		b SUBBOSS      ;06 qurione
+		b SUBBOSS      ;07 palm
+		b SUBBOSS      ;08 collec
+		b SUBBOSS_OK   ;09 kinoko
+		b SUBBOSS      ;0A shell
+		b SUBBOSS      ;0B napkid
+		b SUBBOSS      ;0C hollec
+		b SUBBOSS      ;0D pearl
+		b SUBBOSS      ;0E rocpe
+		b SUBBOSS      ;0F tank
+		b SUBBOSS_OK   ;10 mar
+		b SUBBOSS_OK   ;11 beatle
+		b SUBBOSS      ;12 kabekuiA
+		b SUBBOSS      ;13 kabekuiB
+		b SUBBOSS      ;14 kabekuiC
+		b SUBBOSS      ;15 tamago
+		b SUBBOSS_OK   ;16 dororo
+		b SUBBOSS      ;17 hibaA
+		b SUBBOSS_OK   ;18 miurin
+		b SUBBOSS      ;19 otama
+		b SUBBOSS      ;1A usuba
+		b SUBBOSS      ;1B yamash3
+		b SUBBOSS      ;1C yamash4
+		b SUBBOSS      ;1D yamash5
+		b SUBBOSS      ;1E namazu
+		b SUBBOSS      ;1F chappb
+		b SUBBOSS      ;20 swallob
+		b SUBBOSS      ;21 frow
+		b SUBBOSS      ;22 nakata1
+	SUBBOSS_OK:
 	b WRITE_TO_GEN_OBJECT
 LIMIT:
 	lis	r3, 0x8021		;[rand]@h

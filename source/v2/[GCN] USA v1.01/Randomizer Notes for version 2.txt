@@ -1,0 +1,246 @@
+Load all Teki resources regardless of Generator's UseList (USA v1.01) [Minty Meeo]
+0414a908 60000000
+
+Load all Plant resources regardless of usePlantList (USA v1.01) [Minty Meeo]
+0411aa04 60000000
+
+Load all Boss resources regardless of BossMgr (USA v1.01) [Minty Meeo]
+;Load model and consider at all
+041503dc 60000000   ;Beady Long Legs
+041504d4 60000000   ;Burrowing Snagret
+041505fc 60000000   ;Goolix
+04150874 60000000   ;Emperor Bulblax
+04150960 60000000   ;Flint Beetle
+04150a4c 60000000   ;Candypop Bud
+04150b38 60000000   ;Kingback
+04150c30 60000000   ;Water Geyser
+;Disable init BossProps (rando logic does this later)
+041504ac 60000000   ;0 kumo
+041505c4 60000000   ;1 snake (sphere)
+041505e0 60000000   ;9 snake (prism)
+04150864 60000000   ;2 slime
+04150944 60000000   ;3 king
+04150a30 60000000   ;4 kogane
+04150b1c 60000000   ;5 pom
+04150c08 60000000   ;6 kingback
+04150d20 60000000   ;10 mizu (off)
+04150d3c 60000000   ;11 mizu (on)
+
+Restore Boss Music in stage 0 (USA v1.01) [Minty Meeo]
+04019ab8 60000000
+
+Goolix has boss music
+042cfd18 801537e0
+
+Candypop Buds no longer have collision (isFixed)
+042d0b8c 8007ddd0   ;Point to a different isFixed in __vt__3Pom
+;803EAFCC           ;iMass of Pom if it ever needs changing
+
+
+Resize Generator Class (I am not using this atm)
+//Original Size: 0xb8
+//New Size:      0xbc
+800debb0 386000bc   ;[__ct__13GeneratorListFv]
+800ddbfc 386000bc   ;[read__12GeneratorMgrFR18RandomAccessStreamb]
+800ddc4c 386000bc   ;[read__12GeneratorMgrFR18RandomAccessStreamb]
+800df6c0 386000bc   ;[preload__14GeneratorCacheFUl]
+
+
+
+
+
+
+800de03c	One
+800de42c	At Once
+800de6b0	Init Random
+
+in [init__9GeneratorFv 	plugPikiKando.a generator.cpp]
+800dc09c	from GEN Cache
+800dc170	from GEN Files
+
+
+
+
+
+
+Generator (size : 0xb8)
+0x0000	04	*			[__vt__9Generator]
+0x0004	04	*			[@2077 	plugPikiKando.a generator.cpp] (points to empty .data cstring)
+0x0008	04	*Generator	
+0x000C	04	*Generator	
+...
+0x0020	04	*GenArea	
+0x0024	04	char[]		GenArea id
+0x0028	04	*GenType	
+0x002C	04	char[]		GenType id
+0x0030	04	*GenObject	
+0x0034	04	char[]		GenObject id (might not be used)
+0x0038	20	char[]		Memo
+0x0058	0C	ID32		Generator Name (usually "    " or "next")
+0x0064	0C	ID32		Generator Version (usually "v0.0")
+0x0070
+0x0074	04	int			Carry Over flags bitfield
+...
+0x0084	04	**			[__vt__???] (This is set in Generator::init to the vtable of whatever the object is)
+...
+0x0098	04	flt			X Position
+0x009C	04	flt			Y Position
+0x00A0	04	flt			Z Position
+0x00A4	04	flt			X Offset
+0x00A8	04	flt			Y Offset
+0x00AC	04	flt			Z Offset
+0x00BC	04
+0x00A0	04
+...
+
+0x0034	04	*GenObject	Backup of old GenObject.  RANDOMIZER ONLY!!
+
+
+
+GenBase (size : 0x18)
+0x0000	04	int?	initialized to 0
+0x0004	04	ptr		[__vt__7GenBase]
+0x0008	04	char[]	GEN Object type
+0x000C	04	char[]	GEN Object version
+0x0010	04	ptr		.data, references derived class's copy of "object type" cstring.
+0x0014	04	ptr		.data, references derived class's copy of ???
+
+
+GenObjectBoss (size : 0x2C)
+0x0000	04	int?	init to 0
+0x0004	04	ptr		[__vt__13GenObjectBoss]
+0x0008	04	char[]	GEN Object type
+0x000C	04	char[]	GEN Object version
+0x0010	04	ptr		[@1039 	plugPikiNishimura.a genBoss.cpp] string says "object type"
+0x0014	04	ptr		[@1040 	plugPikiNishimura.a genBoss.cpp]
+0x0018	04	int		Boss ID
+0x001C	04	int		Pellet Kind
+0x0020	04	int		Pellet Color
+0x0024	04	int		Pellet Count
+0x0028	04	int		item (pelMgr)
+
+
+GenObjectTeki (size : 0x20)
+0x0000	04	int?	init to 0
+0x0004	04	ptr		[__vt__7GenObjectTeki]
+0x0008	04	char[]	GEN Object type
+0x000C	04	char[]	GEN Object version
+0x0010	04	ptr		[@1234 	plugPikiNakata.a genteki.cpp] string says "object type"
+0x0014	04	ptr		[@1235 	plugPikiNakata.a genteki.cpp]
+0x0018	04	*TekiPersonality
+0x001C	04	int		Teki ID
+
+	TekiPersonality Class (size : 0x38)
+	0x0000	04	ptr		[__vt__15TekiPersonality]
+	0x0004	04	flt		XPos
+	0x0008	04	flt		YPos
+	0x000C	04	flt		ZPos
+	0x0010	04	flt		XPos_Copy
+	0x0014	04	flt		YPos_Copy
+	0x0018	04	flt		ZPos_Copy
+	0x001C	04	flt		???
+	0x0020	04	int		PELLET_KIND
+	0x0024	04	int		PELLET_COLOR
+	0x0028	0C	ID32	item (pelMgr)
+	0x0034	04	*ParaMultiParameters
+	
+		ParaMultiParametes struct (size : 0x0C)
+		0x0000	04	*ParaParameters<i>
+		0x0004	04	*ParaParameters<f>
+		0x0008	04	ptr		[__vt__19ParaMultiParameters]
+			
+			ParaParameters<i> struct (size : 0x10)
+			0x0000	04	ptr		->array of primitives
+			0x0004	04	int		count of primitives
+			0x0008	
+			0x000C	04	ptr		[__vt__15ParaParametersI]
+			
+			ParaParameters<f> struct (size : 0x10)
+			0x0000	04	ptr		->array of primitives
+			0x0004	04	int		count of primitives
+			0x0008	
+			0x000C	04	ptr		[__vt__15ParaParametersF]
+
+GenObjectDebug (size : 0x58)
+
+GenObjectItem (size : 0x9C)
+
+GenObjectMapObject (size : 0x1C)
+
+GenObjectMapParts (size : 0x90)
+
+GenObjectNavi (size : 0x18)
+
+GenObjectPellet (size : 0x28)
+0x0000	04	int?	init to 0
+0x0004	04	ptr		[__vt__15GenObjectPellet]
+0x0008	04	char[]	GEN Object type
+0x000C	04	char[]	GEN Object version
+0x0010	04	char*	[@1053 	plugPikiKando.a genPellet.cpp] references "object type"
+0x0014	04	char*	[@1054 	plugPikiKando.a genPellet.cpp] references "ペレットをうむ"
+0x0018	04	int		PelMgr index
+0x001C	0C	id32	Pellet ID
+
+GenObjectPiki (size : 0x38)
+
+GenObjectPlant (size : 0x1C)
+0x0000	04	int?	init to 0
+0x0004	04	ptr		[__vt__14GenObjectPlant]
+0x0008	04	char[]	GEN Object type
+0x000C	04	char[]	GEN Object version
+0x0010	04	ptr		[@1538 	plugPikiKando.a plantMgr.cpp] string says "object type"
+0x0014	04	ptr		[@1539 	plugPikiKando.a plantMgr.cpp] string says "create Plant"
+0x0018	04	int		Plant ID
+
+GenObjectWorkObject (size : 0x6C)
+
+GenObjectActor (size : 0x1C)
+
+
+
+
+
+
+
+
+
+
+
+
+
+BirthInfo
+0x0000	flt	XPos
+0x0004	flt	YPos
+0x0008	flt	ZPos
+0x000C	04
+0x0010	04
+0x0014	04
+0x0018	flt	XPos_Copy
+0x001C	flt	YPos_Copy
+0x0020	flt	ZPos_Copy
+0x0024	ptr	Area_SubStruct
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
