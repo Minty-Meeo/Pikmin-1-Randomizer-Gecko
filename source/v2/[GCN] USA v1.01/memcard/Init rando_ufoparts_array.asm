@@ -56,15 +56,12 @@ BODY:
 	li	success_counter, 0
 	
 	LOOP_generate_30_unique_indexes:
+		li	r3, ufopart_count - 1
 		lis	r12,      randomInt__7NSystemFi@h
 		ori	r12, r12, randomInt__7NSystemFi@l
 		mtctr	r12
-		li	r3, ufopart_count - 1
 		bctrl	;-->[randomInt__7NSystemFi]
-		addi	curr_possible_id, r3, 19                ;Add 19 to reach the start of ufoparts in pelMgr
-		cmpwi	curr_possible_id, 33                    ;After index 33 of pelMgr, 3 unrelated corpses appear
-		ble-	0x0008                                  ;Need to skip those if the current index is > 33
-		addi	curr_possible_id, curr_possible_id, 3   ;Add 3 to skip some corpses in the middle of the list
+		mr	curr_possible_id, r3
 		
 		li	array_index, 0
 		LOOP_array_index:                                                  ;while (1) {

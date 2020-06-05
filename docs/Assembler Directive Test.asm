@@ -2,7 +2,12 @@
 
 compiler_flag = 1
 
-
+.macro	call addr
+lis	r12,      \addr@h
+ori	r12, r12, \addr@l
+mtlr	r12
+blrl
+.endm
 
 .byte	0xFF
 .short	0xDEAD

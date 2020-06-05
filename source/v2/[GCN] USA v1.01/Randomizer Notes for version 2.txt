@@ -26,6 +26,9 @@ Load all Boss resources regardless of BossMgr (USA v1.01) [Minty Meeo]
 04150d20 60000000   ;10 mizu (off)
 04150d3c 60000000   ;11 mizu (on)
 
+Load all Pellet resources regardless of pelAnim (USA v1.01) [Minty Meeo]
+0409901c 38000000
+
 Restore Boss Music in stage 0 (USA v1.01) [Minty Meeo]
 04019ab8 60000000
 
@@ -127,7 +130,7 @@ GenObjectTeki (size : 0x20)
 0x000C	04	char[]	GEN Object version
 0x0010	04	ptr		[@1234 	plugPikiNakata.a genteki.cpp] string says "object type"
 0x0014	04	ptr		[@1235 	plugPikiNakata.a genteki.cpp]
-0x0018	04	*TekiPersonality
+0x0018	04	TekiPersonality*
 0x001C	04	int		Teki ID
 
 	TekiPersonality Class (size : 0x38)
@@ -142,11 +145,11 @@ GenObjectTeki (size : 0x20)
 	0x0020	04	int		PELLET_KIND
 	0x0024	04	int		PELLET_COLOR
 	0x0028	0C	ID32	item (pelMgr)
-	0x0034	04	*ParaMultiParameters
+	0x0034	04	ParaMultiParameters*
 	
-		ParaMultiParametes struct (size : 0x0C)
-		0x0000	04	*ParaParameters<i>
-		0x0004	04	*ParaParameters<f>
+		ParaMultiParameters struct (size : 0x0C)
+		0x0000	04	ParaParameters<i>*
+		0x0004	04	ParaParameters<f>*
 		0x0008	04	ptr		[__vt__19ParaMultiParameters]
 			
 			ParaParameters<i> struct (size : 0x10)
