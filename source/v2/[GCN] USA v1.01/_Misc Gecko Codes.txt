@@ -11,31 +11,14 @@ At the top of the stack, as nothing should reach that.
 
 
 
-// Resize "teki" subheap
-In function [__ct__18NewPikiGameSectionFv]
-04059a88	3f200028	lis	r25, 0x0028
-			3f200050	lis	r25, 0x0050
 
-// Candypop Buds Always Unlocked
-In function [create__7BossMgrFiR9BirthInfoP13GenObjectBoss]
-04151cd0	418204a4	beq-	 ->0x80152174
-			60000000	nop
+
 
 // Candypop Buds Close Faster
 In sdata1 [@1002 	plugPikiNishimura.a Pom.cpp]
 043e52d8	"p00\0"
 			"\0\0\0\0"
 
-
-
-// Tekis always spawn pellets
-In function [spawnItems__5BTekiFv]
-04145f20	40800044	bge-	 ->0x80145F64
-			60000000	nop
-// Tekis always spawn water
-In function [spawnItems__5BTekiFv]
-04145fac	40800034	bge-	 ->0x80145FE0
-			60000000	nop
 
 //--------------------------------------------------
 // Tamago is a party ball

@@ -8,13 +8,8 @@
 ; r4 is pointer to string
 
 bl SKIP
-.long 0x50696B6D
-.long 0x696E2052
-.long 0x616E646F
-.long 0x6D697A65
-.long 0x72206461
-.long 0x74614669
-.long 0x6C650000
+	.asciz	"Pikmin Randomizer 2.0 dataFile"
+	.balign 4
 SKIP:
 mflr	r4
 

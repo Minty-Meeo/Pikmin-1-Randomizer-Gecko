@@ -5,21 +5,24 @@
 ;╚════════════════════════════════════════════════════════════╝
 ; In function [start__17TaiCollecStrategyFR4Teki 	plugPikiNakata.a taicollec.cpp]
 ;---Compiler Constants-----------------------------------------
-permVar0 = 31
-;---Local Vars-------------------------------------------------
-Teki = permVar0
+iVar0 = 31
 ;---Symbols----------------------------------------------------
-randomInt__7NSystemFi = 0x8011e8a4
-rand                  = 0x80218070
 spawnTeki__5BTekiFi   = 0x80146740
 ;---Constants--------------------------------------------------
 
+;---Macros-----------------------------------------------------
+.macro	call	addr
+lis	r12,      \addr@h
+ori	r12, r12, \addr@l
+mtlr	r12
+blrl
+.endm
 ;--------------------------------------------------------------
 
 
 
 EXPOSITION:
-	;
+	Teki = iVar0
 
 PROLOGUE:
 	;
@@ -27,10 +30,7 @@ PROLOGUE:
 BODY:
 	mr	r3, Teki
 	li	r4, 0x000C   ;hollec ID
-	lis	r12,      spawnTeki__5BTekiFi@h
-	ori	r12, r12, spawnTeki__5BTekiFi@l
-	mtlr	r12
-	blrl	;-->[spawnTeki__5BTekiFi]
+	call	spawnTeki__5BTekiFi
 
 EPILOGUE:
 	;

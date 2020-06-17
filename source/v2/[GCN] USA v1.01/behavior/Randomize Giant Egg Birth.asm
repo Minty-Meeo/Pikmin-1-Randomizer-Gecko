@@ -6,14 +6,17 @@
 ; In function [loadCard__11PlayerStateFR18RandomAccessStream]
 ;---Compiler Constants-----------------------------------------
 
-;---Local Vars-------------------------------------------------
-
 ;---Symbols----------------------------------------------------
 randomInt__7NSystemFi = 0x8011e8a4
-rand                  = 0x80218070
-spawnTeki__5BTekiFi   = 0x80146740
 ;---Constants--------------------------------------------------
 acceptable_tekis_table_size = 20 
+;---Macros-----------------------------------------------------
+.macro	call	addr
+lis	r12,      \addr@h
+ori	r12, r12, \addr@l
+mtlr	r12
+blrl
+.endm
 ;--------------------------------------------------------------
 
 EXPOSITION:
@@ -24,10 +27,7 @@ PROLOGUE:
 
 BODY:
 	li	r3, acceptable_tekis_table_size - 1
-	lis	r12,      randomInt__7NSystemFi@h
-	ori	r12, r12, randomInt__7NSystemFi@l
-	mtctr	r12
-	bctrl	;-->[randomInt__7NSystemFi]
+	call	randomInt__7NSystemFi
 	bl	SKIP_acceptable_tekis_table
 		.byte 0x00   ;frog
 		.byte 0x03   ;chappy
@@ -58,4 +58,14 @@ EPILOGUE:
 	;
 
 HIJACKED:
-	;
+	;bl	-->[get__17ParaParameters<i>Fi 	plugPikiYamashita.a TAItamago.cpp]   (don't)
+
+
+
+
+
+
+
+
+
+
