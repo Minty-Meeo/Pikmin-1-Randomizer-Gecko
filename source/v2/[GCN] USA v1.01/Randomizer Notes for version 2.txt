@@ -99,6 +99,10 @@ Randomize Pellet Posies better although it's not strictly needed
 Perhaps put a limiter on "sub-boss" like outputs in the RANDO_BASIC category (puffstools, ACB, snagrets shouldn't appear *too* often)
 Killing a pearl kills the clam?
 When navi velocity is too great (falling OoB), bring back to safe land and reset velocity.
+Pre-randomize seeds for all 30 days.  Optional "no re-rolls" mode.  Store on memcard
+Whimsical Radar cutscene is broken outside of FoH.  Make it so it has no special cutscene.
+Mamutas need fixing (zombie sprouts, 102 pikmin in field)  (maybe we can edit aiconst.bin to not be 102 for max pikis?)
+Do not use teki subheap anymore.  (changeHeap function?)
 ----------
 
 
