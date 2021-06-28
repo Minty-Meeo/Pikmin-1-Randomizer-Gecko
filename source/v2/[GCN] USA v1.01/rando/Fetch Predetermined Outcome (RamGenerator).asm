@@ -1,17 +1,18 @@
-#To be inserted at 8012c8b4
+#To be inserted at 800dc0fc
 ;╔════════════════════════════════════════════════════════════╗
-;║ Breadbugs spawn with nest                       Minty Meeo ║
+;║ Fetch Predetermined Outcome (RamGenerator)      Minty Meeo ║
 ;║                                                            ║
 ;╚════════════════════════════════════════════════════════════╝
-; In function [start__17TaiCollecStrategyFR4Teki 	plugPikiNakata.a taicollec.cpp]
+;---STACK------------------------------------------------------
+
 ;---Compiler Constants-----------------------------------------
-iVar0 = 31
-;---Symbols----------------------------------------------------
-spawnTeki__5BTekiFi   = 0x80146740
+
+;---Function Pointers------------------------------------------
+
 ;---Constants--------------------------------------------------
 
 ;---Macros-----------------------------------------------------
-.macro	call	addr
+.macro	call addr
 lis	r12,      \addr@h
 ori	r12, r12, \addr@l
 mtlr	r12
@@ -19,21 +20,21 @@ blrl
 .endm
 ;--------------------------------------------------------------
 
+lwz	r3, 0x0034 (r31)
+mulli	r0, r29, 4
+lwzx	r3, r3, r0
 
 
-EXPOSITION:
-	Teki = iVar0
 
-PROLOGUE:
-	;
 
-BODY:
-	mr	r3, Teki
-	li	r4, 0x000C   ;hollec ID
-	call	spawnTeki__5BTekiFi
 
-EPILOGUE:
-	;
 
-HIJACKED:
-	lwz	r0, 0x004C (sp)
+
+
+
+
+
+
+
+
+

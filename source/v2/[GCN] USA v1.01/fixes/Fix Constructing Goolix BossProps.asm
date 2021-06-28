@@ -1,13 +1,14 @@
-#To be inserted at 8012c8b4
+#To be inserted at 80150860
 ;╔════════════════════════════════════════════════════════════╗
-;║ Breadbugs spawn with nest                       Minty Meeo ║
+;║ Fix Constructing Goolix BossProps               Minty Meeo ║
 ;║                                                            ║
 ;╚════════════════════════════════════════════════════════════╝
-; In function [start__17TaiCollecStrategyFR4Teki 	plugPikiNakata.a taicollec.cpp]
+;---STACK------------------------------------------------------
+
 ;---Compiler Constants-----------------------------------------
-iVar0 = 31
-;---Symbols----------------------------------------------------
-spawnTeki__5BTekiFi   = 0x80146740
+
+;---Function Pointers------------------------------------------
+
 ;---Constants--------------------------------------------------
 
 ;---Macros-----------------------------------------------------
@@ -17,23 +18,33 @@ ori	r12, r12, \addr@l
 mtlr	r12
 blrl
 .endm
+
+.macro	lfsi	fprD, val
+bl	0x0008
+.float	\val
+mflr	r12
+lfs	\fprD, 0x0000 (r12)
+.endm
 ;--------------------------------------------------------------
 
-
-
 EXPOSITION:
-	Teki = iVar0
+	;
 
 PROLOGUE:
 	;
 
 BODY:
-	mr	r3, Teki
-	li	r4, 0x000C   ;hollec ID
-	call	spawnTeki__5BTekiFi
+	lwz	r5, 0x0040 (r30)   ;Load UseList from BossMgr
+	lwz	r5, 0x0008 (r5)    ;Goolix is third entry
 
 EPILOGUE:
 	;
-
+	
 HIJACKED:
-	lwz	r0, 0x004C (sp)
+	;li	r5, 1   (don't)
+
+
+
+
+
+

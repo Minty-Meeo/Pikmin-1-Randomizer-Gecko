@@ -10,7 +10,18 @@
 ; r5 is the bitfield
 
 ;---------------------------------------------------------------------------Tail-
-
+;In function [setDisplayPikiCount__11PlayerStateFi]
+;Plucking first piki does not unlock Onions
+;040805fc 980301ac   stb	r0, 0x01AC (r3)
+;         60000000   nop
+;In function [cleanup__15PikiNukareStateFP4Piki]
+;Yellow Piki "SetDisplayPikiCount"
+;040d73b8 98030184   stb	r0, 0x0184 (r3)
+;         60000000   nop
+;In function [cleanup__15PikiNukareStateFP4Piki]
+;Blue Piki "SetDisplayPikiCount"
+;040d7420 98030184   stb	r0, 0x0184 (r3)
+;         60000000   nop
 ;--------------------------------------------------------------------------------
 
 addi	r0, r3, 0          ; r0 = r3 (bit index) + 0

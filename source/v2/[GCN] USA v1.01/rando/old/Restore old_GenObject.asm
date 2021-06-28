@@ -1,17 +1,16 @@
-#To be inserted at 80074b40
+#To be inserted at 800dcc74
 ;╔════════════════════════════════════════════════════════════╗
-;║ Change Memory Card GameTitle                    Minty Meeo ║
+;║ Restore old_GenObject                           Minty Meeo ║
 ;║                                                            ║
 ;╚════════════════════════════════════════════════════════════╝
-; In function [initBannerArea__10MemoryCardFR8CARDStatPc]
-; NO STACK FRAME!!!
-; r4 is pointer to string
+;[write__9GeneratorFR18RandomAccessStream 	plugPikiKando.a generator.cpp]
+;---Local Vars-------------------------------------------------
+Generator = 30
+;--------------------------------------------------------------
 
-bl SKIP
-	.asciz	"Pikmin Randomizer (v2.0)"
-	.balign	4
-SKIP:
-mflr	r4
+BODY:
+	lwz	r0, 0x0034 (Generator)
+	stw	r0, 0x0030	(Generator)
 
-
-
+HIJACKED:
+	stw	r29, 0x008C (sp)

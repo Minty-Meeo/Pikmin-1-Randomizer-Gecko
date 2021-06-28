@@ -1,20 +1,22 @@
-#To be inserted at 80073e20
+#To be inserted at 8007f758
 ;╔════════════════════════════════════════════════════════════╗
-;║ Change Memory Card Filename                     Minty Meeo ║
-;║ (checkUseFile)                                             ║
+;║ Init RNG Cipher                                 Minty Meeo ║
+;║                                                            ║
 ;╚════════════════════════════════════════════════════════════╝
-; In function [checkUseFile__10MemoryCardFv]
+; In function [initGame__11PlayerStateFv]
 ; NO STACK FRAME!!!
-; r31 is pointer to string
-
-;---------------------------------------------------------------------------Tail-
+; r31 is pointer to PlayerState
 
 ;--------------------------------------------------------------------------------
+rand = 0x80218070
+;--------------------------------------------------------------------------------
 
-bl SKIP
-	.asciz	"Pikmin Randomizer 2.0 dataFile"
-	.balign 4
-SKIP:
-mflr	r31
+BODY:
+	lis	r12,      rand@h
+	ori	r12, r12, rand@l
+	mtctr	r12
+	bctrl	;--> [rand]
+	sth	r3, 0x0012 (r31)
 
-
+HIJACKED:
+	lwz	r0, 0x002C (sp)

@@ -5,34 +5,39 @@
 ;╚════════════════════════════════════════════════════════════╝
 ; In function [loadCard__11PlayerStateFR18RandomAccessStream]
 ;---Compiler Constants-----------------------------------------
-permVar0 = 31
-permVar1 = 30
-permVar2 = 29
-
-tempVar0 = 28
-tempVar1 = 27
-tempVar2 = 26
-;---Local Vars-------------------------------------------------
-RandomAccessStream   = permVar1
-PlayerState          = permVar2
-rando_ufoparts_array = permVar0
+iVar0 = 31
+iVar1 = 30
+iVar2 = 29
+iVar3 = 28
+iVar4 = 27
+iVar5 = 26
 ;---Symbols----------------------------------------------------
 __vt__18RandomAccessStream = 0x802274c8
 ;---Constants--------------------------------------------------
 ufopart_count = 30
+;---Macros-----------------------------------------------------
+.macro	call	addr
+lis	r12,      \addr@h
+ori	r12, r12, \addr@l
+mtlr	r12
+blrl
+.endm
 ;--------------------------------------------------------------
 
 
 EXPOSITION:
-	;
+	RandomAccessStream   = iVar1
+	PlayerState          = iVar2
 
 PROLOGUE:	
 	;
 
 BODY:
+	rando_ufoparts_array = iVar0
+	
 	lwz	rando_ufoparts_array, 0x01CC (PlayerState)
 	
-	array_index = tempVar0
+	array_index = iVar4
 	li	array_index, 0
 	
 	LOOP_array_index:
