@@ -7,6 +7,8 @@ INPUT
 		Iwagen
 		Spotty Bulborb
 		Breadbug
+		Snitchbug
+		Hollec (breadbug nest)
 		Fiery Blowhog
 		Puffy Blowhog
 		Spotty Bulbear
@@ -17,7 +19,7 @@ INPUT
 		Yamash4
 		Yamash5
 		Nakata1
-	BOSS
+	SUBBOSS
 		Puffstool
 		Pearly Clamclamp
 		Pearl (not usually spawned alone)
@@ -56,7 +58,7 @@ OUTPUT
 		Armored Cannon Beetle
 		Tamago (giant egg)
 		Mamuta
-	BOSS
+	SUBBOSS
 		Puffstool
 		Puffy Blowhog
 		Armored Cannon Beetle
