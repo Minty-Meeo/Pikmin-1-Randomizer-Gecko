@@ -2,7 +2,7 @@
 A Randomizer for Pikmin 1 (GCN/Wii) powered entirely by [Gecko Codes](https://geckocodes.org/)
 
 ## How to download / What am I downloading
-Go to this repository's [release](https://github.com/Minty-Meeo/Pikmin-1-Randomizer/releases) tab.  Download [release.zip](https://github.com/Minty-Meeo/Pikmin-1-Randomizer/releases/download/v1/release.zip).
+Go to this repository's [release](https://github.com/Minty-Meeo/Pikmin-1-Randomizer/releases) tab.  Download release.zip.
 
 This package contains \*.txt files with Gecko Codes formatted to be parsed by the Wii Homebrew app [Cheat Manager](https://wiibrew.org/wiki/CheatManager).  Since it's all plaintext, one can easily open these files to copy the Gecko Codes into Dolphin's Cheat Code Editor.
 
@@ -12,7 +12,7 @@ In addition to the randomizer code, a patch that re-enables the unused pluckapho
 ### FIRST AND FOREMOST!
 5.0-11969 was when my Extendo-RAM feature was added to Dolphin Emulator.  Make sure you have a build equal to or greater than this, otherwise the Configurable MEM1 will not be available.
 
-In the \*.txt files from [release.zip](https://github.com/Minty-Meeo/Pikmin-1-Randomizer/releases/download/v1/release.zip), copy the relevant lines of text into the Gecko Code editor in Dolphin Emulator's Game Properties window.  You can also do this for the "Always Pluckaphone" code if desired.
+In the \*.txt files from release.zip, copy the relevant lines of text into the Gecko Code editor in Dolphin Emulator's Game Properties window.  You can also do this for the "Always Pluckaphone" code if desired.
 
 ![Gecko Codes Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Gecko-Codes-tuto.gif)
 
@@ -29,7 +29,7 @@ IMPORTANT NOTE: GCN versions of Pikmin 1 will run out of memory on real hardware
 
 This guide assumes you have a homebrewed Wii with [Cheat Manager](https://wiibrew.org/wiki/CheatManager) and [Gecko OS](https://wiibrew.org/wiki/Gecko_OS) installed. 
 
-If one does not exist already, create a "txtcodes" folder on the root of your Wii's SD card.  Copy the \*.txt files from [release.zip](https://github.com/Minty-Meeo/Pikmin-1-Randomizer/releases/download/v1/release.zip) into the "txtcodes" folder on your SD card.
+If one does not exist already, create a "txtcodes" folder on the root of your Wii's SD card.  Copy the \*.txt files from release.zip into the "txtcodes" folder on your SD card.
 
 On your Wii, open Cheat Manager and enable the desired patches, then generate a \*.gct file.
 
