@@ -18,10 +18,11 @@ Fixes
 	Force Certain Tekis to be used
 	Fix Constructing Goolix BossProps
 	Disable Original UpdateUseList calls
-	Fix Smoky Progg Crash
+	Fix for Smoky Progg crash v3
 	Fix No Onion Routing Crash
+	PikiBuryState works in water
 Behavior
-	Go to Sunset on Day 1
+	Go to Sunset on Day 1 and 30
 	Breadbugs spawn with nest
 	Randomize Giant Egg birth
 	Candypop Buds Always Unlocked
@@ -29,6 +30,7 @@ Behavior
 	Candypop Buds no longer have collision (isFixed)
 	Approaching Onions Unlocks Everything
 	Plucking Pikmin Unlocks Nothing
+	Remove FOCUS Camera While Plucking
 Rando
 	Randomizer Core
 	Fetch Predetermined Outcome (GenTypeOne)
@@ -60,8 +62,9 @@ Disable Original UpdateUseList calls
 0410f2c8 60000000
 0410f3dc 60000000
 
-Go to Sunset on Day 1
+Go to Sunset on Day 1 and 30
 0418271c 60000000
+04182738 48000018
 
 Candypop Buds Always Unlocked
 04151cd0 60000000
@@ -86,7 +89,14 @@ Resize Generator Class (I am not using this atm)
 800ddc4c 386000bc   ;[read__12GeneratorMgrFR18RandomAccessStreamb]
 800df6c0 386000bc   ;[preload__14GeneratorCacheFUl]
 
+PikiBuryState works in water (USA v1.01) [Minty Meeo]
+080d6d68 60000000
+20050004 00000000
+040d6d88 60000000
+040d6d8c 60000000
 
+Remove FOCUS Camera While Plucking
+04108c48 4800002c
 
 
 TODO:
