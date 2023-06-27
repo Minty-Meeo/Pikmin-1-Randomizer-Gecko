@@ -21,6 +21,7 @@ Fixes
 	Fix for Smoky Progg crash v3
 	Fix No Onion Routing Crash
 	PikiBuryState works in water
+	Don't set Beady Long Legs' head collision sphere to a radius of 0.0f in SpiderAi::keyAction0()
 Behavior
 	Go to Sunset on Day 1 and 30
 	Breadbugs spawn with nest
@@ -97,6 +98,9 @@ PikiBuryState works in water (USA v1.01) [Minty Meeo]
 
 Remove FOCUS Camera While Plucking
 04108c48 4800002c
+
+Don't set Beady Long Legs' head collision sphere to a radius of 0.0f in SpiderAi::keyAction0()
+041539d4 60000000
 
 
 TODO:
