@@ -32,6 +32,7 @@ Behavior
 	Approaching Onions Unlocks Everything
 	Plucking Pikmin Unlocks Nothing
 	Remove FOCUS Camera While Plucking
+	Smoky Progg becomes aware of blockades while navigating to the Onions
 Rando
 	Randomizer Core
 	Fetch Predetermined Outcome (GenTypeOne)
@@ -102,6 +103,8 @@ Remove FOCUS Camera While Plucking
 Don't set Beady Long Legs' head collision sphere to a radius of 0.0f in SpiderAi::keyAction0()
 041539d4 60000000
 
+Smoky Progg becomes aware of blockades while navigating to the Onions
+041a8ff0 38c00000
 
 TODO:
 --------------------------------------------------------------------------------
