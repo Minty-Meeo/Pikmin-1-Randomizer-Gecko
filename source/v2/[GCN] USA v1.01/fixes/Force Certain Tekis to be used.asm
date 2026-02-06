@@ -56,6 +56,8 @@ BODY:
 	stb	r4, 0x0164 + 0x21 (r3)   ; frow
 	;This won't be needed once I edit collec's birth ID to be hollec
 	stb	r4, 0x0164 + 0x0C (r3)   ; hollec
+	;This is a hotfix for a crash if beatle spawns from tamago
+	stb	r4, 0x0164 + 0x02 (r3)   ; iwagon
 
 EPILOGUE:
 	;
