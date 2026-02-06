@@ -1,0 +1,92 @@
+================================================================================
+CODELIST
+================================================================================
+MemCard
+	Resize PlayerState class
+	Augment PlayerState class
+	Init rando_ufoparts_array
+	Save rando_ufoparts_array to memcard
+	Load rando_ufoparts_array from memcard
+Fixes
+	Make RNG Random Again
+	Resize Teki Heap
+	Restore Boss Music in stage 0
+	Force Certain Tekis to be used
+	Fix Constructing Goolix BossProps
+	Disable Original UpdateUseList calls
+	Fix for Smoky Progg crash v3
+	Fix for Smoky Progg Onion pathfinding
+	Fix No Onion Routing Crash
+	PikiBuryState works in water
+	Don't set Beady Long Legs' head collision sphere to a radius of 0.0f in SpiderAi::keyAction0()
+Behavior
+	Go to Sunset on Day 1 and 30
+	Breadbugs spawn with nest
+	Randomize Giant Egg birth
+	Candypop Buds Always Unlocked
+	Goolix has boss music
+	Candypop Buds no longer have collision (isFixed)
+	Approaching Onions Unlocks Everything
+	Plucking Pikmin Unlocks Nothing
+	Remove FOCUS Camera While Plucking
+	Smoky Progg becomes aware of blockades while navigating to the Onions
+Rando
+	Randomizer Core
+	Fetch Predetermined Outcome (GenTypeOne)
+	Fetch Predetermined Outcome (GenTypeAtOnce)
+	Fetch Predetermined Outcome (GenTypeInitRand)
+	Fetch Predetermined Outcome (RamGenerator)
+	
+
+
+
+
+Resize PlayerState class (0x01CC)
+04054e34 386001d0
+
+Resize Teki Heap
+04059a88 3f200080
+
+Restore Boss Music in stage 0
+04019ab8 60000000
+
+Disable Original UpdateUseList calls
+0410f3f4 60000000
+0410f0bc 60000000
+0410f1cc 60000000
+0410f258 60000000
+0410f2c8 60000000
+0410f3dc 60000000
+
+Go to Sunset on Day 1 and 30
+0418271c 60000000
+04182738 48000018
+
+Candypop Buds Always Unlocked
+04151cd0 60000000
+
+Goolix has boss music
+042cfd18 801537e0
+
+Candypop Buds no longer have collision (isFixed)
+042d0b8c 8007ddd0   ;Point to a different isFixed in __vt__3Pom
+
+Plucking Pikmin Unlocks Nothing
+040805fc 60000000   ;Plucking first piki does not unlock Onions
+040d73b8 60000000   ;Yellow Piki "SetDisplayPikiCount"
+040d7420 60000000   ;Blue Piki "SetDisplayPikiCount"
+
+PikiBuryState works in water (USA v1.01) [Minty Meeo]
+080d6d68 60000000
+20050004 00000000
+040d6d88 60000000
+040d6d8c 60000000
+
+Remove FOCUS Camera While Plucking
+04108c48 4800002c
+
+Don't set Beady Long Legs' head collision sphere to a radius of 0.0f in SpiderAi::keyAction0()
+041539d4 60000000
+
+Smoky Progg becomes aware of blockades while navigating to the Onions
+041a8ff0 38c00000
