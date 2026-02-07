@@ -3,7 +3,7 @@
 ;║ Randomize Giant Egg birth                       Minty Meeo ║
 ;║                                                            ║
 ;╚════════════════════════════════════════════════════════════╝
-; In function [loadCard__11PlayerStateFR18RandomAccessStream]
+; In function [act__9TAIAhatchFR4Teki]
 ;---Compiler Constants-----------------------------------------
 
 ;---Symbols----------------------------------------------------

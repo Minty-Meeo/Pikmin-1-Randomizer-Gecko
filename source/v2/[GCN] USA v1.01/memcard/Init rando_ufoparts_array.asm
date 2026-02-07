@@ -71,7 +71,7 @@ BODY:
 			lbzx	id_from_array, rando_ufoparts_array, array_index   ;   id_from_array = rando_ufoparts_array[array_index];
 			cmpw	id_from_array, curr_possible_id                    ;   if (id_from_array == curr_possible_id) {
 			beq-	LOOP_generate_30_unique_indexes                    ;      goto LOOP_generate_30_unique_indexes; }
-			addi	array_index, array_index, 1                        ;   array_index++]
+			addi	array_index, array_index, 1                        ;   array_index++;
 			b	LOOP_array_index                                   ;}
 		LOOP_DONE_array_index:
 		

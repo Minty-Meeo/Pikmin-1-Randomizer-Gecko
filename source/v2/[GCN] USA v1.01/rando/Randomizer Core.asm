@@ -37,13 +37,12 @@ isUfoPartsID__6PelletFUl       = 0x800953ac
 alloc__6SystemFUl              = 0x80047004
 
 
-r13 = 0x803e4d20
-tekiMgr                     = 0x3160
-bossMgr                     = 0x3168
-pelletMgr                   = 0x301C
-current_stage               = -0x7F1C
-playerState                 = 0x2F6C
-factory__16GenObjectFactory = 0x3074
+__SDA_BASE__ = 0x803e4d20
+tekiMgr                     = 0x803e7e80 - __SDA_BASE__
+bossMgr                     = 0x803e7e88 - __SDA_BASE__
+pelletMgr                   = 0x803e7d3c - __SDA_BASE__
+playerState                 = 0x803e7c8c - __SDA_BASE__
+factory__16GenObjectFactory = 0x803e7d94 - __SDA_BASE__
 ;---Constants--------------------------------------------------
 GENOBJECT_PIKI = 0x0000
 GENOBJECT_DEBG = 0x0010
