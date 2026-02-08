@@ -42,8 +42,6 @@ Following that, open Gecko OS and, with SD Cheats enabled, launch the game.
 ## The technical mumbo jumbo
 Pikmin 1 Randomizer is written almost entirely using [Gecko Codes](https://geckocodes.org/) using [CodeWrite](https://github.com/TheGag96/CodeWrite).
 
-A few Gecko Codes codes added after v2r0 were written using [Pyiiasmh](https://github.com/JoshuaMKW/pyiiasmh).
-
 See the file "Randomizer Notes.txt" for information on the logic of the randomizer.
 
 You may notice a port to GCN USA v1.00 in my repository.  This was a warm-up port of the Randomizer from before I ported it to New Play Control! USA.  It has fallen a bit behind code-wise from the final product, so it should only be used if absolutely necessary.
