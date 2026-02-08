@@ -1,4 +1,4 @@
-#To be inserted at 801d0ca4
+#To be inserted at 80226cc0
 ;╔════════════════════════════════════════════════════════════╗
 ;║ Randomize Giant Egg birth                       Minty Meeo ║
 ;║                                                            ║
@@ -7,14 +7,14 @@
 ;---Compiler Constants-----------------------------------------
 
 ;---Symbols----------------------------------------------------
-randomInt__7NSystemFi = 0x8011e8a4
+randomInt__7NSystemFi = 0x801c3abc
 ;---Constants--------------------------------------------------
 acceptable_tekis_table_size = 20 
 ;---Macros-----------------------------------------------------
 .macro	call	addr
-lis	r12,      \addr@h
-ori	r12, r12, \addr@l
-mtlr	r12
+lis	r11,      \addr@h
+ori	r11, r11, \addr@l
+mtlr	r11
 blrl
 .endm
 ;--------------------------------------------------------------
@@ -51,14 +51,19 @@ BODY:
 		.byte 0x21   ;frow
 		.balign 4
 	SKIP_acceptable_tekis_table:
-	mflr	r12
-	lbzx	r3, r12, r3
+	mflr	r11
+	lbzx	r4, r11, r3
 
 EPILOGUE:
-	;
+	; This spot in `TAIAhatch::act` is totally screwing me over in NPC!, because `ParaParameters<int>::get` got inlined and the
+	; instruction scheduling put the lwz instruction to access the teki's child teki after LITERALLY EVERYTHING ELSE. r12 isn't
+	; clobbered by `NSystem::randomInt`, so I can be lazy about EABI for that, but nothing can prevent r3 from being clobbered.
+	;lwz	r12, 0x0000 (r30)  ; `this->__vt`
+	;lwz	r12, 0x01A0 (r12)  ; `BTeki::spawnTeki` in VTable.  `mtctr` instruction follows this Gecko Code.
+	mr	r3, r30            ; r3 for thiscall, r4 was set above.
 
 HIJACKED:
-	;bl	-->[get__17ParaParameters<i>Fi 	plugPikiYamashita.a TAItamago.cpp]   (don't)
+	;lwz	r4, 0x0084 (r4)   (don't)
 
 
 

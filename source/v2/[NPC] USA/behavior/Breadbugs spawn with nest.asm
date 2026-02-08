@@ -1,4 +1,4 @@
-#To be inserted at 8012c8b4
+#To be inserted at 801cf850
 ;╔════════════════════════════════════════════════════════════╗
 ;║ Breadbugs spawn with nest                       Minty Meeo ║
 ;║                                                            ║
@@ -7,7 +7,7 @@
 ;---Compiler Constants-----------------------------------------
 iVar0 = 31
 ;---Symbols----------------------------------------------------
-spawnTeki__5BTekiFi   = 0x80146740
+spawnTeki__5BTekiFi   = 0x801b9eb0
 ;---Constants--------------------------------------------------
 
 ;---Macros-----------------------------------------------------
@@ -36,4 +36,4 @@ EPILOGUE:
 	;
 
 HIJACKED:
-	lwz	r0, 0x004C (sp)
+	lwz	r0, 0x0044 (sp)

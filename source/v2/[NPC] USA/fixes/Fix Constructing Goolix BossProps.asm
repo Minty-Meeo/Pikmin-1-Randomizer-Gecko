@@ -1,4 +1,4 @@
-#To be inserted at 80150860
+#To be inserted at 801ee844
 ;╔════════════════════════════════════════════════════════════╗
 ;║ Fix Constructing Goolix BossProps               Minty Meeo ║
 ;║                                                            ║
@@ -34,7 +34,7 @@ PROLOGUE:
 	;
 
 BODY:
-	lwz	r5, 0x0040 (r30)   ;Load UseList from BossMgr
+	lwz	r5, 0x0040 (r31)   ;Load UseList from BossMgr
 	lwz	r5, 0x0008 (r5)    ;Goolix is third entry
 
 EPILOGUE:

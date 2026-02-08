@@ -1,4 +1,4 @@
-#To be inserted at 800461a0
+#To be inserted at 800dce78
 ;╔════════════════════════════════════════════════════════════╗
 ;║ Make RNG Random Again                           Minty Meeo ║
 ;║                                                            ║
@@ -8,7 +8,7 @@
 
 BODY:
 	mftbl	r3                 ; [OSGetTick] inlined
-	stw	r3, 0x2AD8 (r13)   ; [next]
+	stw	r3, -0x7e90 (r13)  ; [next]
 
 HIJACKED:
-	lmw	r27, 0x003C (sp)
+	lwz	r0, 0x0894 (sp)

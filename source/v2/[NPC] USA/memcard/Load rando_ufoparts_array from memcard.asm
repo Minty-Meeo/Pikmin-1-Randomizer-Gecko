@@ -1,4 +1,4 @@
-#To be inserted at 80080460
+#To be inserted at 8019b088
 ;╔════════════════════════════════════════════════════════════╗
 ;║ Load rando_ufoparts_array from memcard          Minty Meeo ║
 ;║                                                            ║
@@ -10,9 +10,8 @@ iVar1 = 30
 iVar2 = 29
 iVar3 = 28
 iVar4 = 27
-iVar5 = 26
 ;---Symbols----------------------------------------------------
-__vt__18RandomAccessStream = 0x802274c8
+__vt__18RandomAccessStream = 0x803377b0
 ;---Constants--------------------------------------------------
 ufopart_count = 30
 ;---Macros-----------------------------------------------------
@@ -26,18 +25,18 @@ blrl
 
 
 EXPOSITION:
-	RandomAccessStream   = iVar1
-	PlayerState          = iVar2
+	RandomAccessStream   = iVar0
+	PlayerState          = iVar1
 
 PROLOGUE:	
 	;
 
 BODY:
-	rando_ufoparts_array = iVar0
+	rando_ufoparts_array = iVar2
 	
 	lwz	rando_ufoparts_array, 0x01CC (PlayerState)
 	
-	array_index = iVar4
+	array_index = iVar3
 	li	array_index, 0
 	
 	LOOP_array_index:
@@ -57,4 +56,4 @@ EPILOGUE:
 	;
 
 HIJACKED:
-	lmw	r26, 0x0028 (sp)
+	lmw	r27, 0x001C (sp)

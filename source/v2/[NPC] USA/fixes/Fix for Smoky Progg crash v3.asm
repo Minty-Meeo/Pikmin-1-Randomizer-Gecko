@@ -1,9 +1,8 @@
-#To be inserted at 801a91e8
-  lwz       r0, 0x034C (r29)   # Path waypoint count
-  lwz       r3, 0x0348 (r29)   # Buffer size
-  cmpw      r0, r3
-  blt+      END                # if (r0 < r3)
-  mr        r0, r3             #   r0 = r3
-
-END:
-
+#To be inserted at 8026572c
+# r0 contains Path waypoint count (`BTeki::mRouteWayPointCount`)
+# r4 contains Path current index (`YTeki::mTableIndex`)
+	lwz	r3, 0x0350 (r29)   # Buffer size (`BTeki::mRouteWayPointMax`)
+	cmpw	cr1, r4, r3        # if (r4 < r3)
+	cmpw	cr0, r4, r0        # if (r4 < r0) # HIJACKED
+	crand	0, 0, 4            # OR the two conditions
+# After this C2 code, a `blt-` instruction is executed.

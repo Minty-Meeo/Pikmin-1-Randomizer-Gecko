@@ -1,4 +1,4 @@
-#To be inserted at 80080094
+#To be inserted at 8019acec
 ;╔════════════════════════════════════════════════════════════╗
 ;║ Save rando_ufoparts_array to memcard            Minty Meeo ║
 ;║                                                            ║
@@ -10,9 +10,8 @@ iVar1 = 30
 iVar2 = 29
 iVar3 = 28
 iVar4 = 27
-iVar5 = 26
 ;---Symbols----------------------------------------------------
-__vt__18RandomAccessStream = 0x802274c8
+__vt__18RandomAccessStream = 0x803377b0
 ;---Constants--------------------------------------------------
 ufopart_count = 30
 ;---Macros-----------------------------------------------------
@@ -57,4 +56,4 @@ EPILOGUE:
 	;
 
 HIJACKED:
-	lmw	r26, 0x0020 (sp)
+	lmw	r27, 0x001C (sp)

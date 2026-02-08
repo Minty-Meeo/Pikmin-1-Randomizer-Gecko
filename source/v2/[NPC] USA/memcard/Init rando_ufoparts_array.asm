@@ -1,4 +1,4 @@
-#To be inserted at 8007f758
+#To be inserted at 8019a390
 ;╔════════════════════════════════════════════════════════════╗
 ;║ Init rando_ufoparts_array                       Minty Meeo ║
 ;║                                                            ║
@@ -15,13 +15,13 @@ iVar3 = 28
 iVar4 = 27
 iVar5 = 26
 ;---Symbols----------------------------------------------------
-alloc__6SystemFUl              = 0x80047004
-getConfigFromIdx__9PelletMgrFi = 0x80098c88
-getConfigIndex__9PelletMgrFUl  = 0x80098c48
-isUfoPartsID__6PelletFUl       = 0x800953ac
-memset                         = 0x80003320
-randomInt__7NSystemFi          = 0x8011e8a4
-rand                           = 0x80218070
+alloc__6SystemFUl              = 0x800dae28
+getConfigFromIdx__9PelletMgrFi = 0x8018481c
+getConfigIndex__9PelletMgrFUl  = 0x801847dc
+isUfoPartsID__6PelletFUl       = 0x8018117c
+memset                         = 0x800063f0
+randomInt__7NSystemFi          = 0x801c3abc
+rand                           = 0x8002c7ec
 ;---Constants--------------------------------------------------
 ufopart_count = 30
 ;---Macros-----------------------------------------------------
@@ -89,7 +89,7 @@ EPILOGUE:
 ;	blr
 
 HIJACKED:
-	lwz	r0, 0x002C (sp)
+	lwz	r31, 0x001C (sp)
 
 
 

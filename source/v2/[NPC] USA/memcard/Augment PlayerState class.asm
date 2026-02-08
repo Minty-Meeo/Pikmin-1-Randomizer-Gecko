@@ -1,4 +1,4 @@
-#To be inserted at 8007fa90
+#To be inserted at 8019a73c
 ;╔════════════════════════════════════════════════════════════╗
 ;║ Augment PlayerState class                       Minty Meeo ║
 ;║                                                            ║
@@ -7,10 +7,10 @@
 ;---Compiler Constants-----------------------------------------
 iVar0 = 31
 ;---Symbols----------------------------------------------------
-alloc__6SystemFUl              = 0x80047004
-memset                         = 0x80003320
-randomInt__7NSystemFi          = 0x8011e8a4
-rand                           = 0x80218070
+alloc__6SystemFUl              = 0x800dae28
+memset                         = 0x800063f0
+randomInt__7NSystemFi          = 0x801c3abc
+rand                           = 0x8002c7ec
 ;---Constants--------------------------------------------------
 ufopart_count = 30
 ;---Macros-----------------------------------------------------

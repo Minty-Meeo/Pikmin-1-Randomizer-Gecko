@@ -1,4 +1,4 @@
-#To be inserted at 8014a804
+#To be inserted at 801bda90
 ;╔════════════════════════════════════════════════════════════╗
 ;║ Force Certain Tekis to be used                  Minty Meeo ║
 ;║                                                            ║
@@ -9,10 +9,10 @@
 ;---Local Vars-------------------------------------------------
 
 ;---Symbols----------------------------------------------------
-randomInt__7NSystemFi = 0x8011e8a4
-rand                  = 0x80218070
-spawnTeki__5BTekiFi   = 0x80146740
-setUsingTypeTable__7TekiMgrFb = 0x8014ae78
+randomInt__7NSystemFi = 0x801c3abc
+rand                  = 0x8002c7ec
+spawnTeki__5BTekiFi   = 0x801b9eb0
+setUsingTypeTable__7TekiMgrFb = 0x801be038
 ;---Constants--------------------------------------------------
 
 ;---Macros-----------------------------------------------------

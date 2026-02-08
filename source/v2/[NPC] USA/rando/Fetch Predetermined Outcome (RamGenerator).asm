@@ -1,4 +1,4 @@
-#To be inserted at 800dc0fc
+#To be inserted at 8014fba4
 ;╔════════════════════════════════════════════════════════════╗
 ;║ Fetch Predetermined Outcome (RamGenerator)      Minty Meeo ║
 ;║                                                            ║

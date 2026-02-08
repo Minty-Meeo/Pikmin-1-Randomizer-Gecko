@@ -1,4 +1,4 @@
-#To be inserted at 800dcaf4
+#To be inserted at 80150600
 ;╔════════════════════════════════════════════════════════════╗
 ;║ Randomizer Core                                 Minty Meeo ║
 ;║                                                            ║
@@ -20,29 +20,29 @@ iVar9 = 22
 iVar10 = 21
 iVar11 = 20
 ;---Function Pointers------------------------------------------
-makeObjectPlant__Fv            = 0x8011accc
-makeObjectTeki__Fv             = 0x8011b2cc
-makeObjectBoss__Fv             = 0x8014d2d0
-makeObjectPellet__Fv           = 0x80099d1c
-makeObjectPiki__Fv             = 0x800dad34
-makeObjectItem__Fv             = 0x800ee470
-makeObjectWorkObject__Fv       = 0x8009b7c4
-create__19Factory9GenObjectFUl = 0x800dcbe8
-randomInt__7NSystemFi          = 0x8011e8a4
-rand                           = 0x80218070
-init__7BossMgrFii              = 0x80150f24
-getConfigFromIdx__9PelletMgrFi = 0x80098c88
-getConfigIndex__9PelletMgrFUl  = 0x80098c48
-isUfoPartsID__6PelletFUl       = 0x800953ac
-alloc__6SystemFUl              = 0x80047004
+makeObjectPlant__Fv            = 0x80199ac4
+makeObjectTeki__Fv             = 0x801c0528
+makeObjectBoss__Fv             = 0x801f12d0
+makeObjectPellet__Fv           = 0x80155178
+makeObjectPiki__Fv             = 0x8014e928
+makeObjectItem__Fv             = 0x80153c38
+makeObjectWorkObject__Fv       = 0x80112034
+create__19Factory9GenObjectFUl = 0
+randomInt__7NSystemFi          = 0x801c3abc
+rand                           = 0x8002c7ec
+init__7BossMgrFii              = 0x801eed90
+getConfigFromIdx__9PelletMgrFi = 0x8018481c
+getConfigIndex__9PelletMgrFUl  = 0x801847dc
+isUfoPartsID__6PelletFUl       = 0x8018117c
+alloc__6SystemFUl              = 0x800dae28
 
 
-__SDA_BASE__ = 0x803e4d20
-tekiMgr                     = 0x803e7e80 - __SDA_BASE__
-bossMgr                     = 0x803e7e88 - __SDA_BASE__
-pelletMgr                   = 0x803e7d3c - __SDA_BASE__
-playerState                 = 0x803e7c8c - __SDA_BASE__
-factory__16GenObjectFactory = 0x803e7d94 - __SDA_BASE__
+__SDA_BASE__ = 0x8049f360
+tekiMgr                     = 0x8049eed0 - __SDA_BASE__
+bossMgr                     = 0x8049ef00 - __SDA_BASE__
+pelletMgr                   = 0x8049ee50 - __SDA_BASE__
+playerState                 = 0x8049ee8c - __SDA_BASE__
+factory__16GenObjectFactory = 0x8049edac - __SDA_BASE__
 ;---Constants--------------------------------------------------
 GENOBJECT_PIKI = 0x0000
 GENOBJECT_DEBG = 0x0010
@@ -701,7 +701,31 @@ BODY:
 			lwz	r3, factory__16GenObjectFactory (r13)
 			lwz	r4, 0x0008 (r3)
 			lwzx	r4, r4, new_type
-			call	create__19Factory9GenObjectFUl
+		;`create__19Factory<9GenObject>FUl` was inlined on Wii and has no freestanding implementations remaining, so I have to inline it too.
+			li	r5, 0
+			li	r7, 0
+			lwz	r0, 0 (r3)
+			cmpwi	r0, 0
+			mtctr	r0
+			ble-	INLINE_LABEL_2
+		INLINE_LABEL_0:
+			lwz	r6, 0x0008 (r3)
+			lwzx	r0, r6, r5
+			cmplw	r4, r0
+			bne-	INLINE_LABEL_1
+			rlwinm	r0, r7, 4, 0, 27
+			add	r3, r6, r0
+			lwz	r12, 0x0004 (r3)
+			mtlr	r12
+			blrl	;--> `mSpawnerInfo[i].mGenFunction()`
+			b	INLINE_LABEL_2
+		INLINE_LABEL_1:
+			addi	r5, r5, 16
+			addi	r7, r7, 1
+			bdnz+	INLINE_LABEL_0
+			li	r3, 0
+		INLINE_LABEL_2:
+		;End of `create__19Factory<9GenObject>FUl` inline
 			mr	curr_GenObject, r3
 			
 			cmpwi	new_type, GENOBJECT_PIKI
@@ -1122,7 +1146,7 @@ EPILOGUE:
 ;	blr
 
 HIJACKED:
-	lwz	r0, 0x00EC (sp)
+	lwz	r0, 0x0054 (sp)
 
 
 

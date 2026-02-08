@@ -1,4 +1,4 @@
-#To be inserted at 800de020
+#To be inserted at 801519c8
 ;╔════════════════════════════════════════════════════════════╗
 ;║ Fetch Predetermined Outcome (GenTypeOne)        Minty Meeo ║
 ;║                                                            ║
