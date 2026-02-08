@@ -16,16 +16,16 @@ In the \*.txt files from release.zip, copy the relevant lines of text into the G
 
 ![Gecko Codes Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Gecko-Codes-tuto.gif)
 
-Make sure the revision of your copy of Pikmin 1 matches the code you are using.  You can find this in the Game Properties window.  Revision 1 is v1.01, Revision 2 is v1.02, etc.
+Make sure the revision of your copy of Pikmin 1 matches the code you are using.  You can find this in the Game Properties window.  Revision 1 is v1.01, Revision 2 is v1.02, etc.  New Play Control! releases have no revisions (outside of regional releases, of course).
 
 ![Game Info Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Info%20tuto.png)
 
-If playing a GameCube version of Pikmin 1, also boost the MEM1 size in Dolphin's Config window.  32MB should be enough.
+If playing a GameCube version of Pikmin 1, also boost the MEM1 size in Dolphin's Config window.  32MB should be enough.  THIS IS NOT REQUIRED FOR NEW PLAY CONTROL!
 
 ![Extendo-RAM Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Extendo-RAM-tuto.gif)
 
 ## Playing on Real Hardware
-IMPORTANT NOTE: GCN versions of Pikmin 1 will run out of memory on real hardware.  I will eventually make a patching script that downscales many textures to alleviate this.
+IMPORTANT NOTE: GCN versions of Pikmin 1 will run out of memory on real hardware and can only be played on Dolphin Emulator.  I apologize for the inconvenience.
 
 This guide assumes you have a homebrewed Wii with [Cheat Manager](https://wiibrew.org/wiki/CheatManager) and [Gecko OS](https://wiibrew.org/wiki/Gecko_OS) installed. 
 
@@ -39,16 +39,20 @@ Following that, open Gecko OS and, with SD Cheats enabled, launch the game.
 
 ![Gecko OS Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Gecko-OS-tuto.gif)
 
+Save data for New Play Control! Pikmin 1 Randomizer will not appear separately in the Wii System Menu's Save Data Mangement menu.  If you need to delete your New Play Control! Pikmin 1 save data, you must you must delete all Pikmin save data or use a homebrew title data manager of your choosing to delete the specific \*.dat file.  The New Play Control! Pikmin 1 Randomizer's save data is a file named "RandoV2.dat", while vanilla New Play Control! Pikmin 1's save data is a file named "Pikmin1.dat".
+
+![Gecko OS Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Wii%20System%20Menu%20Save%20Data%20Management.png)
+
 ## The technical mumbo jumbo
-Pikmin 1 Randomizer is written almost entirely using [Gecko Codes](https://geckocodes.org/) using [CodeWrite](https://github.com/TheGag96/CodeWrite).
+Pikmin 1 Randomizer is written entirely using [Gecko Codes](https://geckocodes.org/) using [CodeWrite](https://github.com/TheGag96/CodeWrite).
 
 See the file "Randomizer Notes.txt" for information on the logic of the randomizer.
 
-You may notice a port to GCN USA v1.00 in my repository.  This was a warm-up port of the Randomizer from before I ported it to New Play Control! USA.  It has fallen a bit behind code-wise from the final product, so it should only be used if absolutely necessary.
+You may notice a port to GCN USA v1.00 in this repository.  This was a warm-up port of the Randomizer v1 from before I ported it to New Play Control! USA.  It has fallen a bit behind code-wise from the final product (I have no plans of supporting it), so it should only be used if absolutely necessary.
 
 I have no plans to port the Randomizer to any other revisions of Pikmin 1 at the moment, but the source and documentation is available to anyone who wants to try.
 
-To anyone expecting further updates to Pikmin 1 Randomizer, I sincerely apologize for neglecting to take this concept further.  Continuing development with Gecko Codes would be untenable, and I have yet to find the urge to restart development using C-Kit or the WIP decomp.
+To anyone expecting further updates to Pikmin 1 Randomizer, I sincerely apologize for neglecting to take this concept further.  Continuing development with Gecko Codes would be untenable, and I have yet to find the urge to restart development using decomp.
 
 ## Can I report a bug?
-If you're playing in Dolphin Emulator and experience a crash or some other oddity, the best thing you can do is make a savestate and share it with me.  The GameCube revisions of Pikmin 1 also have a crash handler that prints to OSReports, which in turn are captured by Dolphin Emulator and displayed in its log.  If you could send me that log as well, that'd be super.  You can send these things either via an Issue Report on this Github page, or on Discord via Hocotate Hacker (my tag is @The JustGreat Minty Meeo#0244).
+I consider the development of this Randomizer to be concluded, but if you're playing in Dolphin Emulator and experience a crash or some other oddity, the best thing you can do is make a savestate (preferably before the crash) and share it with me.  The GameCube revisions of Pikmin 1 also have a crash handler that prints to OSReports, which in turn are captured by Dolphin Emulator and displayed in its log.  If you could send me that log as well, that'd be super.  You can send these things either via an Issue Report on this Github page, or on Discord via Hocotate Hacker (my tag is @The JustGreat Minty Meeo#0244).  That being said, unless it is a Earth-shattering issue, I may decide not to fix it.  The reason being: Gecko Codes require hand-written assembly *and* are starved for codehandler space in this project.  If you are let down by this reality, I apologize once again.
