@@ -4,6 +4,7 @@ CODELIST
 MemCard
 	Resize PlayerState class
 	Augment PlayerState class
+	Change NAND Title DAT Filename
 	Init rando_ufoparts_array
 	Save rando_ufoparts_array to memcard
 	Load rando_ufoparts_array from memcard
@@ -40,6 +41,11 @@ Rando
 
 
 
+Change NAND Title DAT Filename
+0630FB23 0000000C   ;Overwrite first "Pikmin1.dat" string in-place.
+52616E64 6F56322E
+64617400 00000000
+040faa48 80adec38   ;Redirect only reference to second "Pikmin1.dat" string.
 
 Resize PlayerState class (0x01CC)
 040eede8 386001d0
