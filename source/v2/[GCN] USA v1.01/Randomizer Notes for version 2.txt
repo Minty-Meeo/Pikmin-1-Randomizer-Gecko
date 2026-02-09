@@ -19,6 +19,7 @@ Fixes
 	Fix Constructing Goolix BossProps
 	Disable Original UpdateUseList calls
 	Fix for Smoky Progg crash v3
+	Fix for Smoky Progg Onion pathfinding
 	Fix No Onion Routing Crash
 	PikiBuryState works in water
 	Don't set Beady Long Legs' head collision sphere to a radius of 0.0f in SpiderAi::keyAction0()
