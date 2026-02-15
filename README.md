@@ -41,7 +41,7 @@ Following that, open Gecko OS and, with SD Cheats enabled, launch the game.
 
 Save data for New Play Control! Pikmin 1 Randomizer will not appear separately in the Wii System Menu's Save Data Mangement menu.  If you need to delete your New Play Control! Pikmin 1 save data, you must you must delete all Pikmin save data or use a homebrew title data manager of your choosing to delete the specific \*.dat file.  The New Play Control! Pikmin 1 Randomizer's save data is a file named "RandoV2.dat", while vanilla New Play Control! Pikmin 1's save data is a file named "Pikmin1.dat".
 
-![Gecko OS Tutorial](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Wii%20System%20Menu%20Save%20Data%20Management.png)
+![Save Data Management](https://raw.githubusercontent.com/Minty-Meeo/Pikmin-1-Randomizer/master/docs/Wii%20System%20Menu%20Save%20Data%20Management.png)
 
 ## The technical mumbo jumbo
 Pikmin 1 Randomizer is written entirely using [Gecko Codes](https://geckocodes.org/) using [CodeWrite](https://github.com/TheGag96/CodeWrite).
